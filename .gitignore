@@ -1,0 +1,17 @@
+# Carpetas que no se deben subir
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+Obj/
+UserSettings/
+Packages/com.unity.collab-proxy/
+
+# Archivos generados automáticamente
+*.csproj
+*.sln
+*.user
+*.unitypackage
+.DS_Store
