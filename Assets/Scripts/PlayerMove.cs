@@ -47,6 +47,18 @@ public class PlayerMove : MonoBehaviour
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
         }
 
+        if (CheckGround.isGrounded == false)
+        {
+            animator.SetBool("Jump", true);
+            animator.SetBool("Run", false);
+        }
+
+        if (CheckGround.isGrounded == true)
+        {
+            animator.SetBool("Jump", false);
+            
+        }
+
         if (betterJump)
         {
             if (rb2D.velocity.y < 0)
