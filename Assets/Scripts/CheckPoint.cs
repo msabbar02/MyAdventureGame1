@@ -10,6 +10,7 @@ public class CheckPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerRespawn>().ReachedCheckpoint(transform.position.x, transform.position.y);
+            GetComponent<Animator>().enabled = true;
         }
     }
 

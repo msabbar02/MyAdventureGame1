@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
 {
 
     private float checkpointX, checkpointY;
+    public Animator animator;
 
 
     // Start is called before the first frame update
@@ -25,9 +25,12 @@ public class PlayerRespawn : MonoBehaviour
         // Save the checkpoint position to PlayerPrefs
         PlayerPrefs.SetFloat("CheckpointX", checkpointX);
         PlayerPrefs.SetFloat("CheckpointY", checkpointY);
-
-
     }
 
-
+    public void PlayerDamage()
+    {
+        animator.Play("HitAnim");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+    }
 }

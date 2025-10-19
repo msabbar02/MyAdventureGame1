@@ -8,8 +8,8 @@ public class EnemiySpike : MonoBehaviour
     {
         if(collision.transform.CompareTag("Player"))
         {
-            Debug.Log("Spike hit player");
-            Destroy(collision.gameObject);
+            
+            collision.transform.GetComponent<PlayerRespawn>().PlayerDamage();
         }
     }
 }
