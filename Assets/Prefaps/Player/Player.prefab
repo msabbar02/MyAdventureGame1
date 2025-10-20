@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1814929806807627361}
   - component: {fileID: 5313392723335105496}
   - component: {fileID: 2641679180634517949}
+  - component: {fileID: 2874300321076059874}
+  - component: {fileID: 1201105037725743791}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -196,10 +198,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 2
   jumpSpeed: 4
+  DoubleJumpSpeed: 2.5
+  canDoubleJump: 0
   betterJump: 0
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
   spriteRenderer: {fileID: 7470951687491101939}
+  animator: {fileID: 5836802433872860131}
+--- !u!114 &2874300321076059874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915490778844026803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a80bf60159c8b4fae164ae68ec1795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSelected: 0
+  animator: {fileID: 5836802433872860131}
+  spriteRenderer: {fileID: 7470951687491101939}
+  playersController:
+  - {fileID: 9100000, guid: 0dc7c3a3af81e1344a2c86966b538b5d, type: 2}
+  - {fileID: 9100000, guid: 9fa8cb7d4c895fa4f92a3d8079d699f7, type: 2}
+  - {fileID: 9100000, guid: c974ccb49d3eb1542931dac18debac7f, type: 2}
+  playerRenderer:
+  - {fileID: -6367560908665664636, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  - {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
+  - {fileID: -6367560908665664636, guid: d348dff3819df794186a80cb95777629, type: 3}
+--- !u!114 &1201105037725743791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915490778844026803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97d976a60180f64ebe3515ea1600d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   animator: {fileID: 5836802433872860131}
 --- !u!1 &6549686849369538547
 GameObject:

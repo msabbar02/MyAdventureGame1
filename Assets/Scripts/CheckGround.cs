@@ -9,11 +9,17 @@ public class CheckGround : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        isGrounded = true; 
+        if (other.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        } 
     }
     
     private void OnTriggerExit2D(Collider2D other)
     {
-        isGrounded = false;
+        if (other.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
     }
 }

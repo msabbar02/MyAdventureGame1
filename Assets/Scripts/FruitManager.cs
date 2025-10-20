@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,13 +9,27 @@ public class FruitManager : MonoBehaviour
 {
     public TextMeshProUGUI levelCleared;
     public GameObject transition;
-    public void update()
+    
+    public TextMeshProUGUI totalFruits;
+    public TextMeshProUGUI fruitCount;
+    
+    private int totalFruitsInNivel;
+
+    public void Start()
+    {
+        totalFruitsInNivel = transform.childCount;
+        
+    }
+
+    public void Update()
     {
         AllFruitsCollected();
+        totalFruits.text = totalFruitsInNivel.ToString();
+        fruitCount.text = transform.childCount.ToString();
     }
     public void AllFruitsCollected()
     {
-        if(transform.childCount == 1)
+        if(transform.childCount == 0)
         {
            
             levelCleared.gameObject.SetActive(true);
