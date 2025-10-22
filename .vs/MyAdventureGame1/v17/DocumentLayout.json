@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\msabb\\Documents\\unity\\MyAdventureGame1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E3DE7B1-5C2E-12D8-C3FE-903E3E60324F}|Assembly-CSharp.csproj|c:\\users\\msabb\\documents\\unity\\myadventuregame1\\assets\\scripts\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E3DE7B1-5C2E-12D8-C3FE-903E3E60324F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerrespawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1E73D7E-2E5C-D812-C3FE-903E3E60324F}|Assembly-CSharp.csproj|c:\\users\\msabb\\documents\\unity\\myadventuregame1\\assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E73D7E-2E5C-D812-C3FE-903E3E60324F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E3DE7B1-5C2E-12D8-C3FE-903E3E60324F}|Assembly-CSharp.csproj|c:\\users\\msabb\\documents\\unity\\myadventuregame1\\assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E3DE7B1-5C2E-12D8-C3FE-903E3E60324F}|Assembly-CSharp.csproj|C:\\Users\\msabb\\Documents\\unity\\MyAdventureGame1\\assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E3DE7B1-5C2E-12D8-C3FE-903E3E60324F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerRespawn.cs",
-              "DocumentMoniker": "C:\\Users\\msabb\\Documents\\unity\\MyAdventureGame1\\Assets\\Scripts\\PlayerRespawn.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRespawn.cs",
-              "ToolTip": "C:\\Users\\msabb\\Documents\\unity\\MyAdventureGame1\\Assets\\Scripts\\PlayerRespawn.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerRespawn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CheckPoint.cs",
+              "DocumentMoniker": "C:\\Users\\msabb\\Documents\\unity\\MyAdventureGame1\\Assets\\Scripts\\CheckPoint.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CheckPoint.cs",
+              "ToolTip": "C:\\Users\\msabb\\Documents\\unity\\MyAdventureGame1\\Assets\\Scripts\\CheckPoint.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CheckPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T03:38:53.389Z",
+              "WhenOpened": "2025-10-21T13:23:17.377Z",
               "EditorCaption": ""
             },
             {
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CheckPoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T03:37:07.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T03:37:07.377Z"
             },
             {
               "$type": "Document",
