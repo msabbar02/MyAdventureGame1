@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey("space"))
+        if (Input.GetKey("space") || Input.GetKey(KeyCode.UpArrow))
         {
             if (CheckGround.isGrounded)
             {
@@ -35,7 +35,7 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                if (Input.GetKeyDown("space"))
+                if (Input.GetKeyDown("space") || Input.GetKey(KeyCode.UpArrow))
                 {
                     if (canDoubleJump)
                     {

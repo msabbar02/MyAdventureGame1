@@ -41,6 +41,14 @@ public class FruitManager : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        if (currentScene == 2)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(currentScene + 1);
+        }
     }
 }

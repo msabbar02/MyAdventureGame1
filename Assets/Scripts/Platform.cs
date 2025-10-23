@@ -1,45 +1,35 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
     private PlatformEffector2D effector;
+    public float dropTime = 0.3f; // tiempo que estará "atravesable"
 
-    public float startWaitTime;
-
-    private float waitedTime;
-    
-    // Start is called before the first frame update
     void Start()
     {
         effector = GetComponent<PlatformEffector2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp("s"))
+        // Bajar al mantener la flecha hacia abajo o 'S'
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            waitedTime = startWaitTime;
+            StartCoroutine(DropDown());
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey("s"))
+        // Espacio solo para saltar (por si quieres reset manual)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (waitedTime <= 0)
-            {
-                effector.rotationalOffset = 180f;
-                waitedTime = startWaitTime;
-            }
-            else{
-                waitedTime -= Time.deltaTime;
-            }
+            effector.rotationalOffset = 0f;
         }
+    }
 
-        if (Input.GetKey("space"))
-        {
-            effector.rotationalOffset = 0;
-        }
-        
+    IEnumerator DropDown()
+    {
+        effector.rotationalOffset = 180f;   // activa el paso hacia abajo
+        yield return new WaitForSeconds(dropTime);
+        effector.rotationalOffset = 0f;     // vuelve a bloquear desde abajo
     }
 }

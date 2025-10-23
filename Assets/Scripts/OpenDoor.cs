@@ -9,6 +9,8 @@ public class OpenDoor : MonoBehaviour
     public TextMeshProUGUI text;
     public string levelname;
     public bool inDoor = false;
+    
+    public AudioSource audioSource;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,6 +18,7 @@ public class OpenDoor : MonoBehaviour
         {
             text.gameObject.SetActive(true);
             inDoor = true;
+            audioSource.Play();
         }
     }
 
@@ -25,6 +28,7 @@ public class OpenDoor : MonoBehaviour
         {
             text.gameObject.SetActive(false);
             inDoor = false; 
+            audioSource.Stop();
         }
     }
 

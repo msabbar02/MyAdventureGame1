@@ -8,6 +8,7 @@ public class ChangeSkins : MonoBehaviour
     public GameObject skinsPanel;
     private bool inDoor =  false;
     public GameObject player;
+    public AudioSource audioSource;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +16,7 @@ public class ChangeSkins : MonoBehaviour
         {
             skinsPanel.gameObject.SetActive(true);
             inDoor = true;
+            audioSource.Play();
         }
     }
 
@@ -24,6 +26,7 @@ public class ChangeSkins : MonoBehaviour
         {
             skinsPanel.gameObject.SetActive(false);
             inDoor = false;
+            audioSource.Stop();
         }
     }
 
